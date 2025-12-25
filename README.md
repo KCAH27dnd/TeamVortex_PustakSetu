@@ -24,5 +24,5 @@ SERVER:
 
 ## 🛠️ Tech Stack(for the prototype
 * **Language:** HTML,Javascript,CSS .
-* **Libraries:** Express(framework of Node.js),Firebase Realtime Database(getDatabase,push,ref).
+* **Libraries:** Node.js,Angular.js,Express(framework of Node.js),Firebase Realtime Database(getDatabase,push,ref).
 * **Tools:** Firebase Studio, Node.js,VS code, Google Gemini pro.
