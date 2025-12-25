@@ -14,6 +14,7 @@ PUBLIC:
 5) [firebase.json](https://github.com/KCAH27dnd/TeamVortex_PustakSetu/blob/main/firebase.json) : Configuration file on how our project's Firebase services are deployed
 SERVER:
 6) [server.js](https://github.com/KCAH27dnd/TeamVortex_PustakSetu/blob/main/server/server.js): Node.js backend server uses the Eexpress framework to handle request and then Google Gemini 1.5 flash model to process viksual data.
+
 7)[pakage-lock.json](https://github.com/KCAH27dnd/TeamVortex_PustakSetu/blob/main/server/package-lock.json): A record of every detail of dependency and sub-dependency to ensure project consistency.
 
 ## Features
