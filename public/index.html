@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VORTEX – Save Books, Educate Futures</title>
+  <link rel="stylesheet" href="/style.css" />
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+ <main>
+
+<header class="navbar">
+  <div class="container nav-flex">
+    <h1 class="logo">PustakSetu </h1>
+
+    <div class="pill">
+      📚 PustakSetu
+      <span>Scroll to explore →</span>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero-landing">
+
+  <div class="hero-content">
+
+    <!-- LEFT -->
+    <div class="hero-text">
+      <span class="hero-badge">📘 Bridging Education Gaps</span>
+
+      <h1 class="hero-title">
+        Save Books.<br />
+        <span class="highlight">Educate Futures.</span>
+      </h1>
+
+      <p class="hero-desc">
+        PustakSetu bridges unused academic books to those who need them most.
+        Connect students, institutes, and NGOs through AI-powered book sharing.
+      </p>
+
+      <div class="hero-actions">
+  <a href="/choose-ngo.html" class="btn donate-btn">
+    📖 Donate Books →
+  </a>
+
+  <a href="/find-books.html" class="btn ngo-btn">
+    🔍 Find Books (NGO) →
+  </a>
+
+  <a href="/my-donations.html" class="btn secondary-btn">
+    📦 My Donations →
+  </a>
+</div>
+
+      <div class="hero-stats">
+        <div>
+          <strong>5,000+</strong>
+          <span>Books Saved</span>
+        </div>
+        <div>
+          <strong>50+</strong>
+          <span>NGOs Connected</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="hero-visual">
+      <div class="card c1"></div>
+      <div class="card c2"></div>
+      <div class="card c3"></div>
+      <div class="arc"></div>
+    </div>
+
+  </div>
+
+  <div class="scroll-indicator">
+    Scroll to explore ↓
+  </div>
+
+</section>
+
+<!-- KEEP YOUR EXISTING SECTIONS BELOW -->
+<!-- donate -->
+<!-- request -->
+<!-- browse -->
+
+
+
+<!-- ================= DONATE ================= -->
+<section id="donate" class="section donate-ai">
+  <div class="container donate-grid">
+
+    <!-- LEFT: IMAGE RECOGNITION -->
+    <div class="ai-card left">
+
+      <h3>📷 Book Image Recognition</h3>
+      <p class="muted">Instant book details from a photo</p>
+
+   <input type="file" id="book-image" accept="image/*" hidden>
+
+<div class="upload-placeholder" onclick="document.getElementById('book-image').click()">
+  📸
+  <p>Upload or capture book image</p>
+</div>
+
+<button id="analyzeBtn" class="ai-primary-btn" type="button">
+  🔍 Analyze with AI
+</button>
+
+      
+
+
+      <div class="detected">
+
+  <div>
+    <small>Book Title</small>
+    <input id="book-title" placeholder="Enter book title manually" />
+  </div>
+
+  <div>
+    <small>Author</small>
+    <input id="book-author" placeholder="Enter author name" />
+  </div>
+
+  <div>
+    <small>Subject</small>
+    <input id="book-category" placeholder="Physics / Maths / Chemistry" />
+  </div>
+
+  <div>
+    <small>Condition</small>
+    <select id="book-condition">
+      <option value="">Select condition</option>
+      <option>New</option>
+      <option>Good</option>
+      <option>Used</option>
+    </select>
+  </div>
+
+  <div>
+    <small>Description</small>
+    <textarea id="book-description" placeholder="Any extra details about the book"></textarea>
+  </div>
+
+  <div>
+    <small>Your Email</small>
+    <input id="donor-email" placeholder="your@email.com" />
+  </div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+</main>
+
+<!-- ================= FIREBASE ================= -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+  import { getDatabase, ref, push, onValue } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyCftigiLyyzx1FSvw5rA8AZlvEGQfIuF44",
+    authDomain: "vortex-8d4ee.firebaseapp.com",
+    databaseURL: "https://vortex-8d4ee-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "vortex-8d4ee",
+    storageBucket: "vortex-8d4ee.appspot.com",
+    messagingSenderId: "583073692614",
+    appId: "1:583073692614:web:05f17c57d25638765890c7"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const database = getDatabase(app);
+
+  window.db = database;
+  window.dbRef = ref;
+  window.dbPush = push;
+  window.dbRead = onValue;
+</script>
+
+<script src="/script.js"></script>
+
+
+<!-- ================= STATE LOGIC ================= -->
+<script>
+function continueToDonate() {
+  const state = document.getElementById("stateInput").value.trim();
+
+  if (!state) {
+    alert("Please enter your state to continue");
+    return;
+  }
+
+  // save state if needed later
+  localStorage.setItem("userState", state);
+
+  // unlock scrolling
+  document.body.classList.remove("locked");
+
+  // smooth scroll
+  document.getElementById("donate").scrollIntoView({
+    behavior: "smooth"
+  });
+}
+</script>
+<script>
+function scrollToForm() {
+  alert("Next step: submit donation or fill more details");
+}
+</script>
+
+
+</body>
+</html>
+
