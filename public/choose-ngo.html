@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Choose NGO – PustakSetu</title>
+  <link rel="stylesheet" href="choose-ngo.css" />
+</head>
+
+<body>
+
+<section class="ngo-page">
+
+  <!-- BADGE -->
+  <span class="badge">For Donors</span>
+
+  <!-- TITLE -->
+  <h1>Choose an NGO to Donate</h1>
+  <p class="subtitle">
+    Select your state to find NGOs near you
+  </p>
+
+  <!-- STATE SEARCH -->
+  <div class="smart-search">
+    <input
+      type="text"
+      id="state-search"
+      placeholder="Search by state (e.g. Ut...)"
+      autocomplete="off"
+    />
+    <div id="tabs-output" class="tabs-container"></div>
+  </div>
+
+  <!-- DYNAMIC TITLE -->
+  <h2 id="ngo-title" class="ngo-title"></h2>
+
+  <!-- DYNAMIC NGO LIST (JS WILL RENDER HERE) -->
+  <div id="ngo-list" class="ngo-grid"></div>
+
+  <!-- CONTINUE BUTTON -->
+  <div class="footer-action">
+    <a href="index.html#donate" class="continue-btn">
+      Continue to Donate →
+    </a>
+  </div>
+
+</section>
+
+<!-- MAIN SCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>
