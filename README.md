@@ -3,7 +3,7 @@ This project is build for the hackathon Tech Sprint( GDG on Campus )by our team 
 Its a prototype website where books can find their new owners and spread its knowledge among the underpriveliged since education is key to opening doors of new opportunities.
 
 The link to the prototype website 📚📚:
-[PustakSetu](https://pustaksetu-67b7b.web.app/)
+[PustakSetu](https://vortex-8d4ee.web.app/)
 
 ## [Scripts]
 PUBLIC:
