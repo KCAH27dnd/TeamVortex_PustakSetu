@@ -5,33 +5,23 @@ Its a prototype website where books can find their new owners and spread its kno
 The link to the prototype website 📚📚:
 [PustakSetu](https://pustaksetu-67b7b.web.app/)
 
-# [Scripts]
-1) index.html : This html script is for the frontend of the Homepage (navigation)
+## [Scripts]
+PUBLIC:
+1) index.html : HTML script for the frontend of the Donation panel.
+2) my-donations.html : HTML script for the frontend of the record of donated books by the user
+3) find-books.html: HTML script for the webpage where user can find the books issued by donor
+4) choose-ngo.html: HTML scipt for the webpage to search navigate list of different NGOs , their information(adress) according to the state user enters.
+5) firebase.json : Configuration file on how our project's Firebase services are deployed
+SERVER:
+6) server.js: Node.js backend server uses the Eexpress framework to handle request and then Google Gemini 1.5 flash model to process viksual data.
+7)pakage-lock.json: A record of every detail of dependency and sub-dependency to ensure project consistency.
 
-# [Project Name]
+## Features
+* **Feature 1:** Our website allows user to navigate and connect to NGOs that are within their reach and cater to the specfic needs of both the parties. *
+* **Feature 2:** The extention of server.js allows the website to send request to Google gemini 1.5 flash model and levarge the google Gemini API key for book analyses and easier flow of action for the user.
+* **Feature 3:** The User Donating can keep a log of the books they have donated, and the User NGOs can request specific books making sure that each book reaches the rightfull new owner.
 
-[![Website](https://img.shields.io/badge/Website-Visit%20Site-blue)](https://yourwebsite.com)
-
-A brief, 1-2 sentence description of what your scripts do and who they are for.
-
-## 🔗 Live Link
-You can view the live project or documentation here: [https://yourwebsite.com](https://yourwebsite.com)
-
----
-
-## 🚀 Features
-* **Feature 1:** Describe a main function of your script.
-* **Feature 2:** Describe another key capability.
-* **Feature 3:** Mention any integrations or unique logic.
-
-## 🛠️ Tech Stack
-* **Language:** Python / JavaScript / etc.
-* **Libraries:** pandas, requests, etc.
-* **Tools:** Git, VS Code.
-
-## 📦 Setup & Installation
-Follow these steps to get your development environment running:
-
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+## 🛠️ Tech Stack(for the prototype
+* **Language:** HTML,Javascript,CSS .
+* **Libraries:** Express(framework of Node.js),Firebase Realtime Database(getDatabase,push,ref).
+* **Tools:** Firebase Studio, Node.js,VS code, Google Gemini pro.
