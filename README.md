@@ -15,7 +15,7 @@ PUBLIC:
 SERVER:
 6) [server.js](https://github.com/KCAH27dnd/TeamVortex_PustakSetu/blob/main/server/server.js): Node.js backend server uses the Eexpress framework to handle request and then Google Gemini 1.5 flash model to process viksual data.
 
-7)[pakage-lock.json](https://github.com/KCAH27dnd/TeamVortex_PustakSetu/blob/main/server/package-lock.json): A record of every detail of dependency and sub-dependency to ensure project consistency.
+7. [pakage-lock.json](https://github.com/KCAH27dnd/TeamVortex_PustakSetu/blob/main/server/package-lock.json): A record of every detail of dependency and sub-dependency to ensure project consistency.
 
 ## Features
 * **Feature 1:** Our website allows user to navigate and connect to NGOs that are within their reach and cater to the specfic needs of both the parties. *
