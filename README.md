@@ -23,6 +23,8 @@ SERVER:
 * **Feature 3:** The User Donating can keep a log of the books they have donated, and the User NGOs can request specific books making sure that each book reaches the rightfull new owner.
 
 ## 🛠️ Tech Stack(for the prototype
-* **Language:** HTML,Javascript,CSS .
-* **Libraries:** Node.js,Angular.js,Express(framework of Node.js),Firebase Realtime Database(getDatabase,push,ref).
+* **Frontend:** HTML5, CSS3, JavaScript (Vanilla)
+* **Backend:** Node.js with Express Framework.
+* **Database & Hosting:** Firebase Realtime Database & Firebase Hosting
+* **AI integration:** Google Gemini 1.5 Flash API (for automated book analysis)
 * **Tools:** Firebase Studio, Node.js,VS code, Google Gemini pro.
