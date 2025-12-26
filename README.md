@@ -1,4 +1,4 @@
-iiiii# TeamVortex_PustakSetu
+# TeamVortex_PustakSetu
 This project is build for the hackathon Tech Sprint( GDG on Campus )by our team Vortex.
 Its a prototype website where books can find their new owners and spread its knowledge among the underpriveliged as we beleive education is key to opening doors of new opportunities.
 
@@ -18,9 +18,11 @@ SERVER:
 7. [pakage-lock.json](https://github.com/KCAH27dnd/TeamVortex_PustakSetu/blob/main/server/package-lock.json): A record of every detail of dependency and sub-dependency to ensure project consistency.
 
 ## Features
-* **Feature 1:** Our website allows user to navigate and connect to NGOs that are within their reach and cater to the specfic needs of both the parties. *
-* **Feature 2:** The extention of server.js allows the website to send request to Google gemini 1.5 flash model and levarge the google Gemini API key for book analyses and easier flow of action for the user.
-* **Feature 3:** The User Donating can keep a log of the books they have donated, and the User NGOs can request specific books making sure that each book reaches the rightfull new owner.
+* **AI-Powered Donation:** Our Website leverages Gemini 1.5 Flash to automatically extract book details from images, reducing user effort.
+
+* **State-Wise NGO Mapping:** The website uses a dynamic filtering system to connect donors with verified NGOs across India based on the PDF database provided.
+
+* **Real-time Synchronization:** It also utilises Firebase to ensure book availability and requests are updated instantly across all clients.
 
 ## 🛠️ Tech Stack(for the prototype
 * **Frontend:** HTML5, CSS3, JavaScript (Vanilla)
